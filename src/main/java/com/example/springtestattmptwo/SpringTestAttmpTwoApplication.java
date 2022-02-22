@@ -6,11 +6,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
-@Controller
+@RestController
 public class SpringTestAttmpTwoApplication {
 
 	@RequestMapping("/")
-	@ResponseBody
 	public String get()
 	{
 		return "index request";

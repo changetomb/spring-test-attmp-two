@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>spring-test-attmp-two</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>spring-test-attmp-two</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
