@@ -3,9 +3,7 @@ package com.example.springtestattmptwo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @Controller
@@ -16,10 +14,17 @@ public class SpringTestAttmpTwoApplication {
 	}
 
 
-	@RequestMapping(value = "/",method = {RequestMethod.GET,RequestMethod.POST})
+	@GetMapping(value = "/")
 	@ResponseBody
-	public String index()
+	public String get()
 	{
-		return "index";
+		return "index get";
+	}
+
+	@PostMapping(value = "/")
+	@ResponseBody
+	public String post()
+	{
+		return "index post";
 	}
 }
