@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @Controller
+@RequestMapping("/")
 public class SpringTestAttmpTwoApplication {
 
 	public static void main(String[] args) {
@@ -14,17 +15,17 @@ public class SpringTestAttmpTwoApplication {
 	}
 
 
-	@GetMapping(value = "/")
+	@RequestMapping
 	@ResponseBody
 	public String get()
 	{
-		return "index get";
+		return "index request";
 	}
 
-	@PostMapping(value = "/")
+	@GetMapping(value = "/")
 	@ResponseBody
 	public String post()
 	{
-		return "index post";
+		return "index get";
 	}
 }
