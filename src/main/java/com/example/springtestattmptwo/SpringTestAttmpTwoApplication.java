@@ -7,25 +7,19 @@ import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @Controller
-@RequestMapping("/")
 public class SpringTestAttmpTwoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringTestAttmpTwoApplication.class, args);
-	}
-
-
-	@RequestMapping
+	@RequestMapping("/")
 	@ResponseBody
 	public String get()
 	{
 		return "index request";
 	}
 
-	@GetMapping(value = "/")
-	@ResponseBody
-	public String post()
-	{
-		return "index get";
+	public static void main(String[] args) {
+		SpringApplication.run(SpringTestAttmpTwoApplication.class, args);
 	}
+
+
+
 }
